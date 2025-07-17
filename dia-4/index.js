@@ -51,7 +51,7 @@ if(palabraOculta.join("")===palabra){
    return alert("Ganaste la palabra es "+ palabra)
 }
 
-   intentos --
+   intentos--
 }
 }
 

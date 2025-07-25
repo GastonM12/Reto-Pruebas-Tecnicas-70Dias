@@ -16,7 +16,7 @@ const calcularAreaPoligono=(poligono)=>{
   if(poligono.tipo === "triangulo"){
     return poligono.base * poligono.altura / 2
   }
-  else if (poligono.tipo === "cuadrado"){
+  else if (poligono.tipo === "cuadrado" && poligono.base === poligono.altura){
     return poligono.base * poligono.altura
   }
   else{
@@ -24,4 +24,4 @@ const calcularAreaPoligono=(poligono)=>{
   }
 }
 
-console.log(calcularAreaPoligono({ tipo: 'triangulo', base: 6, altura: 9 }));
+console.log(calcularAreaPoligono({ tipo: 'cuadrado', base: 6, altura:9}));

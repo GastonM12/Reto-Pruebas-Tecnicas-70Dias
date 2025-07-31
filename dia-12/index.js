@@ -30,7 +30,7 @@ const contarPalabras = (parrafo) => {
    //separar el parrafo,eliminar caracteres y convertir a minusculas
    const palabras = parrafo
       .toLowerCase()
-      .replace(/[^\w/s]/gi ," ") //exprecion regular para eliminar todos los caracteres y acentos
+      .replace(/[^\w/s]/gi, " ") //exprecion regular para eliminar todos los caracteres y acentos
       .split(" ");
    //crear una variable contador
    let contador = {};

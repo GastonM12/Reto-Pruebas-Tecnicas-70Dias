@@ -24,25 +24,27 @@ Devuelve:
  
 */
 
-
 //crear una funcion que filtre los usuarios por edad y letra
 
-const filtrarUsuarios=(usuarios)=>{
-//filtrar usuarios por edad y letra
-const usuariosFiltrados = usuarios.filter(usuario => usuario.edad >= 20 && usuario.nombre.includes("o")&&usuario.nombre.includes("n"))
+const filtrarUsuarios = (usuarios) => {
+   //filtrar usuarios por edad y letra
+   const usuariosFiltrados = usuarios.filter(
+      (usuario) =>
+         usuario.edad >= 20 &&
+         usuario.nombre.includes("o") &&
+         usuario.nombre.includes("n")
+   );
 
-console.log(usuariosFiltrados);
+   console.log(usuariosFiltrados);
+};
 
+const usuarios = [
+   { nombre: "Antonio", edad: 20 },
+   { nombre: "Juan", edad: 23 },
+   { nombre: "Pepe", edad: 12 },
+   { nombre: "Raul", edad: 28 },
+   { nombre: "Paco", edad: 38 },
+   { nombre: "Jason", edad: 56 },
+];
 
-}
-
-  const usuarios = [
-    { nombre: 'Antonio', edad: 20 },
-    { nombre: 'Juan', edad: 23 },
-    { nombre: 'Pepe', edad: 12 },
-    { nombre: 'Raul', edad: 28 },
-    { nombre: 'Paco', edad: 38 },
-    { nombre: 'Jason', edad: 56}
-  ];
-
-  filtrarUsuarios(usuarios);
+filtrarUsuarios(usuarios);
